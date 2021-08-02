@@ -1,0 +1,54 @@
+<!DOCTYPE html><!--(!+enter) for the shortcut-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    <form action=""> <!--form action not specified here-->
+        <div>
+            <label for="first">First Name</label>
+            <input type="text" id="first" name="firstname" required><!--normal text input but assured that it is 100% required-->
+            <label for="last">Last Name</label>
+            <input type="text" id="last" name="firstname" required><!--normal text input but assured that it is 100% required-->
+        </div>
+        <p> <b>Select a Race: </b></p>
+        <div>
+            <input type="radio" name="race" id="funrun" value="funrun"> <!--radio type input i.e. circled one-->
+            <label for="funrun">Fun Run 5k</label>
+        </div>
+        <div>
+            <input type="radio" name="race" id="half" value="half"><!--radio type input i.e. circled one-->
+            <label for="half">Half Marathon</label>
+        </div>
+        <div>
+            <input type="radio" name="race" id="full" value="full"><!--radio type input i.e. circled one-->
+            <label for="full">Full Marathon</label>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required><!--email is required to be filled here-->
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required> <!--password is required to be filled here-->
+        </div>
+
+        <div>
+            <label for="division">Select Age Group</label><!--select a single option out of many options... type button-->
+            <select name="division" id="division">
+                <option value="kids">under 18</option>
+                <option value="ya">18-30</option>
+                <option value="adults">30-50</option>
+                <option value="seniors">50+</option>
+            </select>
+        </div>
+        <button>Register</button>
+
+    </form>
+
+</body>
+
+</html>
